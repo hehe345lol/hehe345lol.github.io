@@ -1,1 +1,1 @@
-console.log("This is loeaded from the external JS file"); 
+console.log("This is loaded from the external JS file"); 
