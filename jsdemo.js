@@ -1,9 +1,9 @@
 console.log("This is loaded from the external JS file"); 
 alert("This is an Alert!! Click to continue.");
 
-var name = "khaleb";
-let school = "CATO";
-var fun_fact ="One ranked game brought me from rank 4409 on bardock to rank 23."
+var name = prompt("what is your name?";
+let school = prompt("what school do you attend?");
+var fun_fact =prompt("what is something you would like for me to know about you?");
 
 console.log(`Name: ${name}`);
 console.log(`School: ${school}`);
