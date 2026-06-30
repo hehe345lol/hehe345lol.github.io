@@ -1,4 +1,6 @@
 console.log("This is loaded from the external JS file"); 
+alert("This is an Alert!! Click to continue.");
+
 var name = "khaleb";
 let school = "CATO";
 var fun_fact ="One ranked game brought me from rank 4409 on bardock to rank 23."
