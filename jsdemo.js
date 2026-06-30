@@ -3,7 +3,7 @@ alert("This is an Alert! Click to continue.");
 
 var name = prompt("what is your name?";
 let school = prompt("what school do you attend?");
-var fun_fact =prompt("what is something you would like for me to know about you?");
+var fun_fact = prompt("what is something you would like for me to know about you?");
 
 console.log(`Name: ${name}`);
 console.log(`School: ${school}`);
