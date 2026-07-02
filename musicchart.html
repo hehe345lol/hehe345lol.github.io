@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+    <style>
+      body{
+        background-color: #ff5757;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+      <h1>My favorite Toby Fox Songs</h1>
+      <div id="plot"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/GWf9_qSrnOM?si=wHjLP0MD4KdUS_HD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tBdLO8u-0L8?si=jz1Xl_Et4Of1jW7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MzEHcwoNlbE?si=ZK0M6qKFD1dNhrKK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><a href="index.html">return to the home page</a></p>
+      <hr>
+      <p>&copy; STEM PREP 2026</p>
+    </center>
+    <script>
+      var songs = ["Flower man", "Hammer of Justice", "Garden of Hopes and Dreams"];
+      var views = [3022085,18118058,833040];
+
+    var trace = {
+      x: songs,
+      y: views,
+      type: "bar"
+    };
+      var data = [trace];
+      var layout = {title: "My Favorite Toby Fox Songs"};
+      Plotly.newPlot("plot", data, layout);
+    </script>
+  </body>
+</html>
