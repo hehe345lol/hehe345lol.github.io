@@ -1,5 +1,5 @@
 //36.2048° N latitude and 138.2529° E longitude
-var coordinates = [36.2048, 138.2529];
+var coordinates = [35.6762, 139.6503];
 var map = L.map('map').setView(coordinates, 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
