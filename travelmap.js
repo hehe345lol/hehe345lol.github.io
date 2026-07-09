@@ -4,6 +4,13 @@ var popupcode = `<center>
 <h3>Hello from Japan!</h3>
 <iframe width="400" height="300" src="https://www.youtube.com/embed/IuTDuvYr7f0?si=SUQg8JXxj8nr-YG_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </center`;
+var marker1 = [35.68459, 139.76168];
+var markercode =`<center>
+<h3>Palace Hotel</h3>
+<a href="travel.jpg">
+<img src="travel.jpg" title= "Palace Hotel" height="100" width="200">
+</a>
+</center>`;
 var map = L.map('map').setView(coordinates, 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -12,3 +19,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.circle(coordinates, {"title": "hello from Japan!",
                       color: "red", fillColor: "#03ddff",
                       radius: 90}).bindPopup(popupcode).addTo(map);
+L.marker(marker1).bindPopup(markercode).addTo(map);
